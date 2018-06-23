@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateandCallTaskWithandWithoutReturnType.cs" />
+    <Compile Include="DeclareAndCallUsingAnonymousFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
