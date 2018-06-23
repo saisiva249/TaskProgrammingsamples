@@ -54,7 +54,7 @@ namespace TaskProgrammingSamples
     }
 }
 
-//Here we ahve Three tasks 
+//Here we have Three tasks 
 //DoTask with no parameters,
 //DoTaskParameter which accepts one parameter 
 //DoTaskandReturn which return result without accepting parameter
