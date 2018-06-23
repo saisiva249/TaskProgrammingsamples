@@ -11,7 +11,8 @@ namespace TaskProgrammingSamples
         {
             //Task instance Creation
             var task_NoParameter_NoReturn = Task.Factory.StartNew(DoTask);
-            var task_MessageParameter_NoReturn = Task.Factory.StartNew(DoTaskParameter, "Method Returns");
+            var task_MessageobjectParameter_NoReturn = Task.Factory.StartNew(DoTaskParameter, "Method Returns"); // receiving parameter should be of object type or else throws error
+            var task_MessagestringParameter_NoReturn = Task.Factory.StartNew(()=> { DoTaskParameterString("Method Returns"); });
             var task_NoParameter_ReturnsString = Task<string>.Factory.StartNew(DoTaskandReturn);
             var timeTakingTask_NoParameter_NoReturn = Task.Factory.StartNew(TimeTakingTask, TaskCreationOptions.LongRunning);
 
@@ -20,7 +21,8 @@ namespace TaskProgrammingSamples
             
             //Making the background threads wait until our tasks are completed
             task_NoParameter_NoReturn.Wait();
-            task_MessageParameter_NoReturn.Wait();
+            task_MessageobjectParameter_NoReturn.Wait();
+            task_MessagestringParameter_NoReturn.Wait();
             Console.WriteLine(task_NoParameter_ReturnsString.Result);
             timeTakingTask_NoParameter_NoReturn.Wait();
         }
@@ -36,6 +38,13 @@ namespace TaskProgrammingSamples
         static void DoTaskParameter(object message)
         {
             Console.WriteLine("From DoTask "+ message);
+        }
+
+        //Task  which dont return which accepts one parameter
+        //Parameter can be of any type
+        static void DoTaskParameterString(string message)
+        {
+            Console.WriteLine("From DoTask with string " + message);
         }
 
         static string DoTaskandReturn()
