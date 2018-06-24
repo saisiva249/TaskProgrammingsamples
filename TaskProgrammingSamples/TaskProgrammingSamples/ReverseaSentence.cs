@@ -50,7 +50,7 @@ namespace TaskProgrammingSamples
         {
             string sentence = "this is just the sample of my task programming learning";
 
-            //
+            //To caliculate the processing time of parent tassk as we assigned 1000ms to each child.
             Stopwatch sw = new Stopwatch();
             sw.Start();
             // we make our process stop until our parent task is completed using Wait.
