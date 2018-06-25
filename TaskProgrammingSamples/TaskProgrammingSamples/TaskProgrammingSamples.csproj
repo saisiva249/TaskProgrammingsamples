@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CreateandCallTaskWithandWithoutReturnType.cs" />
     <Compile Include="DeclareAndCallUsingAnonymousFunctions.cs" />
+    <Compile Include="MapProcessandReduceSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseaSentence.cs" />
   </ItemGroup>
