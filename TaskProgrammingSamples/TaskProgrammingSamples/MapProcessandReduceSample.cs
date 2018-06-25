@@ -12,7 +12,7 @@ namespace TaskProgrammingSamples
         {
             Thread.Sleep(1000);
             StringBuilder sb = new StringBuilder();
-            for(int i = word.Length; i >= 0; i--)
+            for(int i = word.Length-1; i >= 0; i--)
             {
                 sb.Append(word[i]);
             }

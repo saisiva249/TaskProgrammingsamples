@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TaskProgrammingSamples.ReverseaSentence</StartupObject>
+    <StartupObject>TaskProgrammingSamples.MapProcessandReduceSample</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
