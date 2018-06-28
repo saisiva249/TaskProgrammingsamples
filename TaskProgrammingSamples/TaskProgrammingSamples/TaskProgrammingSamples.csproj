@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>TaskProgrammingSamples.MapProcessandReduceSample</StartupObject>
+    <StartupObject>TaskProgrammingSamples.PlinqSample</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="CreateandCallTaskWithandWithoutReturnType.cs" />
     <Compile Include="DeclareAndCallUsingAnonymousFunctions.cs" />
     <Compile Include="MapProcessandReduceSample.cs" />
+    <Compile Include="PlinqSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseaSentence.cs" />
   </ItemGroup>
