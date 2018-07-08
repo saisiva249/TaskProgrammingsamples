@@ -29,6 +29,7 @@ namespace TaskProgrammingSamples
             sw.Start();
             var words = senteence.Split()
                                   .AsParallel()   
+                                  .AsOrdered()
                                   .WithExecutionMode(ParallelExecutionMode.ForceParallelism)
                                   .Select(x => new string(x.Reverse().ToArray()));
 
@@ -48,3 +49,5 @@ namespace TaskProgrammingSamples
 //process and reduce, are making it slow, so i tried to force that to work as parallel.
 //output when forced to work in parallel: "tsuj elpmas fo ym ksat gnimmargorp siht eht si gninrael" which is not  correct
 
+// so to avoid the order mismatch we have a method where we ask the PLINQ parallism to preserve the order using the ASORDERED method
+//A subsequent call to ASUNORDER restores the PLINQ ordereing behaviour.
