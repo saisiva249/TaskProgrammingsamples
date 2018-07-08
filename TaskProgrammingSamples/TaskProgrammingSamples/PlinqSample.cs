@@ -43,3 +43,8 @@ namespace TaskProgrammingSamples
         }
     }
 }
+
+//our sample is basically works as a consequental(which means squential), but in squential the overhead of creating task network mapping the data,
+//process and reduce, are making it slow, so i tried to force that to work as parallel.
+//output when forced to work in parallel: "tsuj elpmas fo ym ksat gnimmargorp siht eht si gninrael" which is not  correct
+
